@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Great+Vibes&family=Inconsolata:wght@400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700;800;900&family=League+Spartan:wght@100;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Titillium+Web:wght@200;300;400;600;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +32,45 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+.title-logo{
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+}
+
+.nav-link{
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  color: #1694d9;
+}
+.nav-link::after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #1694d9;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+.nav-link:focus::after, .nav-link:hover::after {
+  width: 100%;
+  left: 0%;
+}
+.red-text{
+  color: #DD3579;
+}
+.blue-text{
+  color: #1694d9;
+}
+.yellow-text{
+  color: #FFB800;
 }
