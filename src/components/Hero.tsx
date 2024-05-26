@@ -1,5 +1,4 @@
 import Image from "next/image";
-import profile from "../assets/profile.jpg";
 import React from "react";
 
 const Hero = () => {
@@ -8,14 +7,7 @@ const Hero = () => {
     <div className="border border-gray-600/50 w-full rounded-md px-4 py-6 mb-4">
       <div className="max-w-2xl mx-auto">
         <div className="flex items-center">
-
-          <Image
-            src={profile}
-            width={60}
-            height={60}
-            className="rounded-md"
-            alt="Sanket"
-          />
+          
           <h1 className="ml-5 flex flex-col justify-center text-white">
             <span className="text-lg font-semibold">Namaste!</span>
             <span className="text-2xl lg:text-3xl font-bold Lg:font-semibold">
