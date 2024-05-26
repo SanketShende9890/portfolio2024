@@ -27,8 +27,7 @@ export default function ProjectCard(props) {
         </div>
         <div className="flex flex-col justify-between pr-4 sm:flex-row">
           <p className="text-white sm:w-3/5">
-            Platform for developers to boost their coding skills by solving
-            real-world problems and daily practices.
+            {props.description}
           </p>
           <div className="items-end text-right sm:w-2/5 mt-4 lg:mt-0">
             <div className="flex flex-col justify-end">
@@ -37,10 +36,10 @@ export default function ProjectCard(props) {
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-700 opacity-60 duration-150"></span>
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-green-600"></span>
                 </span>
-                Completed
+                {props.status}
               </span>
               <h4 className="text-lg font-semibold tracking-tighter text-white">
-                BetterDevs
+                {props.title}
               </h4>
             </div>
           </div>
